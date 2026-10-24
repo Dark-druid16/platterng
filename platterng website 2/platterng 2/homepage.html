@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Platter Bistro &amp; Grills | Chow meals by movie genre</title>
+    <meta name="description" content="Loaded meal boxes from The Platter Bistro &amp; Grills, each matched to a movie genre. Open daily, 8 AM - 10 PM.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="homepage.css">
+</head>
+<body>
+
+    <header class="header" id="top">
+        <div class="first-head">
+            <p>Open daily, 8 AM &ndash; 10 PM</p>
+            <a href="tel:+2348038608839">+234 803 860 8839</a>
+        </div>
+        <div class="logo">
+            <a class="brand" href="#top" aria-label="The Platter Bistro &amp; Grills, back to top">
+                <img src="Assets/logo.jpeg" alt="The Platter Bistro &amp; Grills">
+            </a>
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+                <span></span><span></span><span></span>
+            </button>
+            <nav id="site-nav" aria-label="Main">
+                <ul>
+                    <li><a href="#top">Home</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#visit">Order</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- HERO: crossfading slides. Each slide's --bg must match the colour at the edge of its image. -->
+        <section class="hero" aria-roledescription="carousel" aria-label="Featured meals">
+
+            <div class="slide is-active" style="--bg:#000000">
+                <picture>
+                    <source media="(max-aspect-ratio: 6/5)" srcset="Assets.platterng/hero-chow-square.jpg">
+                    <img src="Assets/Hero-chow.jpeg" alt="Chow meals you should order, based on movie genre" width="1920" height="1080">
+                </picture>
+            </div>
+
+            <div class="slide" style="--bg:#ee6146" aria-hidden="true">
+                <picture>
+                    <source media="(max-aspect-ratio: 6/5)" srcset="Assets.platterng/hero-shizusan-square.jpg">
+                    <img src="Assets/Hero-shizusan.jpeg" alt="Shizusan Mix: plantain, peppered beef, noodles and grilled prawns" width="1920" height="1080">
+                </picture>
+            </div>
+
+            <div class="slide" style="--bg:#febce2" aria-hidden="true">
+                <picture>
+                    <source media="(max-aspect-ratio: 6/5)" srcset="Assets.platterng/hero-kimchi-square.jpg">
+                    <img src="Assets/Hero-kimchi.jpeg" alt="Kimchi Mix: stir-fried noodles with prawns, sausage and peppers" width="1920" height="1080">
+                </picture>
+            </div>
+
+            <div class="slide" style="--bg:#7868e5" aria-hidden="true">
+                <picture>
+                    <source media="(max-aspect-ratio: 6/5)" srcset="Assets.platterng/hero-jambalaya-square.jpg">
+                    <img src="Assets/Hero-jambalaya.jpeg" alt="Jambalaya: spiced noodles with chicken, beef, prawns and a glazed wing" width="1920" height="1080">
+                </picture>
+            </div>
+
+            <div class="slide" style="--bg:#b7e5ff" aria-hidden="true">
+                <picture>
+                    <source media="(max-aspect-ratio: 6/5)" srcset="Assets.platterng/hero-adunni-square.jpg">
+                    <img src="Assets/Hero-adunni max.jpeg" alt="Adunni Max: spiced rice with boiled eggs, plantain and peppered meats" width="1920" height="1080">
+                </picture>
+            </div>
+
+            <button class="hero-arrow prev" type="button" aria-label="Previous slide">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg>
+            </button>
+            <button class="hero-arrow next" type="button" aria-label="Next slide">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg>
+            </button>
+            <div class="hero-dots"></div>
+        </section>
+
+        <!-- MENU: one ticket per meal. Change --genre to recolour a ticket. -->
+        <section class="menu" id="menu">
+            <div class="wrap">
+                <div class="section-head">
+                    <h2>Which genre is your appetite?</h2>
+                    <p>Every meal box on our menu is matched to a movie genre. Pick the one that fits your mood tonight.</p>
+                </div>
+
+                <div class="tickets">
+
+                    <article class="ticket" style="--genre:#ee6146">
+                        <img src="Assets/shizusan.jpeg" alt="Shizusan Mix meal box" loading="lazy">
+                        <div class="ticket-body">
+                            <h3>Shizusan Mix</h3>
+                            <p>Fried plantain, peppered beef and grilled prawns piled over stir-fried noodles.</p>
+                        </div>
+                        <div class="ticket-stub"><span class="genre">Action</span><span>China</span></div>
+                    </article>
+
+                    <article class="ticket" style="--genre:#febce2">
+                        <img src="Assets/kimchi.jpeg" alt="Kimchi Mix meal box" loading="lazy">
+                        <div class="ticket-body">
+                            <h3>Kimchi Mix</h3>
+                            <p>Stir-fried noodles with prawns, sausage strips, peppers and glazed meat.</p>
+                        </div>
+                        <div class="ticket-stub"><span class="genre">Romance</span><span>Korea</span></div>
+                    </article>
+
+                    <article class="ticket" style="--genre:#7868e5">
+                        <img src="Assets/jambalaya.jpeg" alt="Jambalaya meal box" loading="lazy">
+                        <div class="ticket-body">
+                            <h3>Jambalaya</h3>
+                            <p>Spiced noodles with chicken, beef and prawns, topped with a glazed grilled wing.</p>
+                        </div>
+                        <div class="ticket-stub"><span class="genre">Thriller</span><span>UK</span></div>
+                    </article>
+
+                    <article class="ticket" style="--genre:#b7e5ff">
+                        <img src="Assets/adunni max.jpeg" alt="Adunni Max meal box" loading="lazy">
+                        <div class="ticket-body">
+                            <h3>Adunni Max</h3>
+                            <p>Spiced rice with boiled eggs, fried plantain and peppered assorted meats.</p>
+                        </div>
+                        <div class="ticket-stub"><span class="genre">Drama</span><span>Naija</span></div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT: the wave echoes the yellow wave in the Platter posters. -->
+        <svg class="about-wave" viewBox="0 0 1440 80" preserveAspectRatio="none" aria-hidden="true">
+            <path d="M0,80 L0,44 C180,2 360,0 560,30 C760,60 900,72 1080,42 C1220,18 1340,10 1440,30 L1440,80 Z"/>
+        </svg>
+        <section class="about" id="about">
+            <div class="wrap about-grid">
+                <h2>Every meal has a plot.</h2>
+                <div>
+                    <p>The Platter Bistro &amp; Grills packs generous, flavour-forward meal boxes, from the Naija-style Adunni Max to the Korean-inspired Kimchi Mix. Each one is matched to a movie genre, so choosing dinner is half the fun.</p>
+                    <dl class="facts">
+                        <div>
+                            <dt>Hours</dt>
+                            <dd>Open daily, 8 AM &ndash; 10 PM</dd>
+                        </div>
+                        <div>
+                            <dt>Phone</dt>
+                            <dd><a href="tel:+2348038608839">+234 803 860 8839</a></dd>
+                        </div>
+                    </dl>
+                </div>
+            </div>
+        </section>
+
+        <!-- ORDER -->
+        <section class="visit" id="visit">
+            <div class="wrap">
+                <h2>Hungry? Call in your order.</h2>
+                <p>Tell us your mood and we will point you to the right box.</p>
+                <a class="btn" href="tel:+2348038608839">Call +234 803 860 8839</a>
+                <!-- Add your address or a map embed here -->
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="wrap">
+            <p>&copy; 2026 The Platter Bistro &amp; Grills</p>
+            <a href="#top">Back to top</a>
+        </div>
+    </footer>
+
+    <script src="homepage.js"></script>
+</body>
+</html>
